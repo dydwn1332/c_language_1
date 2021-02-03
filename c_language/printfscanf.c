@@ -1,5 +1,5 @@
 #include <stdio.h>
-int main(void)
+int main_printfscanf(void)
 {
 	//int age = 12;
 	//printf("%d\n", age);
