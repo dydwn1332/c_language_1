@@ -60,6 +60,24 @@ int main(void)
 	printf("키         :%.2lf\n", height);
 	printf("범죄명     :%s\n", what);
 
+	printf("%s\n%d\n%.2f\n%.2lf\n%s", name, age, weight, height, what);
+
+	printf("\n\n-----신상 정보-----\n\n");
+	printf("이름       :%s\n", name);
+	printf("나이       :%d\n", age);
+	printf("몸무게     :%.2f\n", weight);
+	printf("키         :%.2lf\n", height);
+	printf("범죄명     :%s\n", what);
+
+	printf("%s\n%d\n%.2f\n%.2lf\n%s", name, age, weight, height, what);
+
+	printf("\n\n-----신상 정보-----\n\n");
+	printf("이름       :%s\n", name);
+	printf("나이       :%d\n", age);
+	printf("몸무게     :%.2f\n", weight);
+	printf("키         :%.2lf\n", height);
+	printf("범죄명     :%s\n", what);
+
 
 	return 0;
 }
