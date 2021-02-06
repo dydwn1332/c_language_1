@@ -41,18 +41,42 @@ int main(void)
 	//		printf("   %d x %d = %d\n", i, j, i*j);
 	//	}
 	//}
-
-	int i;
-	int j;
-	for (i = 0; i <= 5; i++)
+	for (;;)
 	{
-		for (j = 0; j <= i; j++)
+		int line;
+		int j;
+		int a;
+		int input = 0;
+		printf("값을 입력하시오(종료:0) :");
+		if (scanf_s("%d", &input) == 0)
 		{
-			printf("*");
-		}
-		printf("\n");
-	}
+			for (;;)
+			{
+				printf("\n숫자를 입력하시오 :");
+				if (scanf_s("%d", &input) == 0)
+				{
+					break;
+				}
 
+
+			}
+		}
+		int b = input;
+
+		for (line = 0; line <= input; line++)
+		{
+			b--;
+			for (a = 0; a <= b; a++)
+			{
+				printf(" ");
+			}
+			for (j = 0; j <= line * 2; j++)
+			{
+				printf("*");
+			}
+			printf("\n");
+		}
+	}
 
 	return 0;
 }
