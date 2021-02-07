@@ -141,6 +141,7 @@
   <ItemGroup>
     <ClCompile Include="loop.c" />
     <ClCompile Include="printfscanf.c" />
+    <ClCompile Include="project.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

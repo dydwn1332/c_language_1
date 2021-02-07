@@ -41,29 +41,45 @@ int main(void)
 	//		printf("   %d x %d = %d\n", i, j, i*j);
 	//	}
 	//}
+	int line;
+	int j;
+	int a;
+	int input = 0;
+
 	for (;;)
 	{
-		int line;
-		int j;
-		int a;
-		int input = 0;
-		printf("값을 입력하시오(종료:0) :");
-		if (scanf_s("%d", &input) == 0)
+		printf("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n");
+		printf("@                                  @\n");
+		printf("@       @       @        @  @@@@@  @\n");
+		printf("@ @@@@@ @ @@@@@ @  @@@@@ @  @      @\n");
+		printf("@  @ @  @     @ @  @   @ @  @      @\n");
+		printf("@  @ @  @ @@@@@ @@ @   @ @  @      @\n");
+		printf("@  @ @  @ @     @  @   @ @  @@@@@  @\n");
+		printf("@ @@@@@ @ @@@@@ @  @@@@@ @         @\n");
+		printf("@       @       @        @ @@@@@@@ @\n");
+		printf("@                                  @\n");
+		printf("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n");
+		printf("값을 입력하시오(종료:-1) :");
+		if (scanf_s("%d", &input) != 1)
 		{
 			for (;;)
 			{
-				printf("\n숫자를 입력하시오 :");
-				if (scanf_s("%d", &input) == 0)
+				printf("\n숫자를 입력하시오(종료:-1) :");
+				while (getchar() != '\n');  
+				if (scanf_s("%d", &input) == 1)
 				{
 					break;
 				}
-
-
 			}
+		}
+		if (input == -1)
+		{
+			printf("프로그램을 종료합니다.");
+			exit(0);
 		}
 		int b = input;
 
-		for (line = 0; line <= input; line++)
+		for (line = 0; line < input; line++)
 		{
 			b--;
 			for (a = 0; a <= b; a++)
@@ -76,7 +92,7 @@ int main(void)
 			}
 			printf("\n");
 		}
+		printf("\n\n\n");
 	}
-
 	return 0;
 }
