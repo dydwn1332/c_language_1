@@ -77,12 +77,10 @@ int main(void)
 			printf("프로그램을 종료합니다.");
 			exit(0);
 		}
-		int b = input;
-
+		
 		for (line = 0; line < input; line++)
 		{
-			b--;
-			for (a = 0; a <= b; a++)
+			for (a = line; a <= input - 1; a++)
 			{
 				printf(" ");
 			}
@@ -92,7 +90,7 @@ int main(void)
 			}
 			printf("\n");
 		}
-		printf("\n\n\n");
+		printf("\n\n");
 	}
 	return 0;
 }
